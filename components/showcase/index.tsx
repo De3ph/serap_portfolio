@@ -1,7 +1,6 @@
 import BentoGrid from "./grid"
 import BentoGridItem from "./item"
 import { items } from "@/data"
-import generateBento from "@/utils/generateBentoClassname"
 
 const Index = () => {
   return (
@@ -10,8 +9,10 @@ const Index = () => {
         {items.map((item, i) => (
           <BentoGridItem
             key={i}
+            isEven={i % 2 === 0}
             item={item}
-            className={i === 3 || i % 7 === 0 ? "md:col-span-2" : ""}
+            // className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+            className={"animated-item scale-50 opacity-0"}
           />
         ))}
       </BentoGrid>

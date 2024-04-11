@@ -4,4 +4,5 @@ type BentoGridItem = {
   description?: string | React.ReactNode
   image?: MediaImage
   id: string
+  fileLinks?: string[]
 }

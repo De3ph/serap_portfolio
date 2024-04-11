@@ -1,13 +1,24 @@
 import React from "react"
+import serap_jpg from "@/public/serap.jpg"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/avatar"
 
-type Props = {}
-
-const Index = (props: Props) => {
+const Index = () => {
   return (
     <div className='text-center space-y-8'>
-      <h1 className='text-3xl font-semibold'>Serap Fişenkçi</h1>
+      <h1 className='text-3xl font-semibold'>Merhaba 👋, ben Serap</h1>
 
-      <p className='text-xl'>
+      <section className='flex justify-center'>
+        <Avatar className='size-64'>
+          <AvatarImage
+            src={serap_jpg.src}
+            alt='my_image'
+            className='object-scale-down'
+          />
+          <AvatarFallback>SF</AvatarFallback>
+        </Avatar>
+      </section>
+
+      <p className='text-xl font-medium'>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
         recusandae provident temporibus minima nemo unde! Vel quibusdam, magnam
         nulla inventore odit deserunt.

@@ -3,7 +3,7 @@ import Showcase from "@/components/showcase"
 
 export default function Home() {
   return (
-    <main className='space-y-16'>
+    <main className='px-8 md:px-0 space-y-16'>
       <Hero />
       <Showcase />
     </main>
