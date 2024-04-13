@@ -1,5 +1,3 @@
-// import { randomUUID } from "crypto"
-
 import armoni from "../public/armoni.jpg"
 import houst from "../public/houst.png"
 import shining from "../public/shining.jpg"

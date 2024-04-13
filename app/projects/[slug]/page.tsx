@@ -12,7 +12,7 @@ const Page = ({ params }: Props) => {
     return item.slug === params.slug
   })
   return (
-    <main className='text-center space-y-8'>
+    <main className='text-center space-y-8 min-h-dvh'>
       <div className='text-3xl font-bold capitalize'>{project?.title}</div>
 
       <section className='grid grid-cols-1 space-y-8 place-items-center'>

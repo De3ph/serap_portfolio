@@ -6,7 +6,19 @@ const montserrat = Montserrat({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Serap Fişenkçi",
-  description: "Designer"
+  description: "Designer",
+  authors: [{ name: "Serap Fişenkçi" }],
+  abstract: "Serap Fişenkçi'nin kişisel portfolyo sitesi",
+  applicationName: "Serap Fişenkçi - Designer",
+  keywords: [
+    "Serap Fişenkçi",
+    "Portfolio",
+    "Designer",
+    "Portfolyo",
+    "UI/UX",
+    "Tasarım",
+    "Adobe"
+  ]
 }
 
 export default function RootLayout({
@@ -16,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' className='light'>
-      <body className='bg-no-repeat bg-center tracking-wide text-neutral-800 bg-gradient-to-br from-slate-300 to-neutral-100  dark:bg-neutral-900'>
+      <body className='bg-no-repeat bg-center tracking-wide text-neutral-800 bg-gradient-to-br from-slate-300 to-neutral-100 dark:bg-none dark:bg-neutral-950/95 dark:text-neutral-100'>
         <div
           className={`${montserrat.className} py-16 px-4 max-w-5xl mx-auto text-balance select-none`}
         >
@@ -26,4 +38,3 @@ export default function RootLayout({
     </html>
   )
 }
-// bg-gradient-to-b from-stone-100 to bg-blue-200 text-neutral-950 dark:text-neutral-100
