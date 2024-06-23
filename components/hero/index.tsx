@@ -45,7 +45,7 @@ const Index = () => {
         </div>
         <div className='text-md text-balance text-center'>
           UI/UX alanında çalışmalar yapmayı seviyorum. Adobe Creative Cloud
-          programlarına hakimim Figma ise favori progralarım arasında.
+          programlarına hakimim, Figma ise favori progralarım arasında.
         </div>
       </section>
     </div>
